@@ -1,0 +1,10 @@
+#,français,anglais,Type,PV,Attaque,Defense,Vitesse
+1,Bulbizarre,Bulbasaur,Plante / Poison,45,49,49,45
+2,Herbizarre,Ivysaur,Plante / Poison,60,62,63,60
+3,Florizarre,Venusaur,Plante / Poison,80,82,83,80
+4,Salamèche,Charmander,Feu,39,52,43,65
+5,Reptincel,Charmeleon,Feu,58,64,58,80
+6,Dracaufeu,Charizard,Feu / Vol,78,84,78,100
+7,Carapuce,Squirtle,Eau,44,48,65,43
+8,Carabaffe,Wartortle,Eau,59,63,80,58
+9,Tortank,Blastoise,Eau,79,83,100,78
