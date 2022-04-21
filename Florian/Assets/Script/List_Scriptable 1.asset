@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: List_Scriptable 1
+  m_EditorClassIdentifier: Assembly-CSharp::LISTscript
+  pokelist:
+  - {fileID: 11400000, guid: e0c720ae2dee01044be0a18057a35c90, type: 2}
+  - {fileID: 11400000, guid: f24b0618c4dfb4448925a7300a4da530, type: 2}
+  - {fileID: 11400000, guid: 0de0b1f63666d4740bec85345de565f6, type: 2}
+  - {fileID: 11400000, guid: 9385ca0c868f54346907f96040f21254, type: 2}
+  - {fileID: 11400000, guid: a8f583a6e77e5964395f87d28fc53a10, type: 2}
+  - {fileID: 11400000, guid: 0309efb318b4e504595a413f9bbf40cf, type: 2}
+  - {fileID: 11400000, guid: 09227e736b2866a49a40f912b520ef67, type: 2}
+  - {fileID: 11400000, guid: 4ee7a41fc16167247a5d35cc56495c94, type: 2}
+  - {fileID: 11400000, guid: e07270e696142c44ab9cca779e3ca7a7, type: 2}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Excel", fileName = "Export_Excel")]
-public class JsonEditor : ScriptableObject
+public class CsvEditor : ScriptableObject
 {
     public int numero;
     public string nomfr;

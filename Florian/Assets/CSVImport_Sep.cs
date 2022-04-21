@@ -47,7 +47,7 @@ namespace CSVImport_sep
             {
                 Dictionary<string, object> _potentialPoke = csvData[i];
 
-                Debug.Log($"Poke Number: {_potentialPoke["#"]} {_potentialPoke["français"]} {_potentialPoke["anglais"]} {_potentialPoke["Type"]} {_potentialPoke["PV"]} {_potentialPoke["Attaque"]} {_potentialPoke["Defense"]} {_potentialPoke["Vitesse"]}");
+                //Debug.Log($"Poke Number: {_potentialPoke["#"]} {_potentialPoke["français"]} {_potentialPoke["anglais"]} {_potentialPoke["Type"]} {_potentialPoke["PV"]} {_potentialPoke["Attaque"]} {_potentialPoke["Defense"]} {_potentialPoke["Vitesse"]}");
 
                 int numero;string français;string anglais; string type;int pv;int attaque;int defense; int vitesse;
 
@@ -73,7 +73,7 @@ namespace CSVImport_sep
         private static void CreatePoke(int numero, string français, string anglais, string type, int pv, int attaque, int defense, int vitesse)
         {
 
-            JsonEditor fichePoke = ScriptableObject.CreateInstance<JsonEditor>();
+            CsvEditor fichePoke = ScriptableObject.CreateInstance<CsvEditor>();
 
             fichePoke.numero = numero;
             fichePoke.nomfr = français;

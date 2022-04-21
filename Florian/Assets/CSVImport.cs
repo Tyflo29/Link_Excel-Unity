@@ -65,7 +65,7 @@ namespace CSVImport
                 anglais = _potentialPoke["anglais"].ToString();
                 type = _potentialPoke["Type"].ToString();
 
-                JsonEditor fichePoke = ScriptableObject.CreateInstance<JsonEditor>();
+                CsvEditor fichePoke = ScriptableObject.CreateInstance<CsvEditor>();
                 AssetDatabase.CreateAsset(fichePoke, $"Assets/Script/{numero}_{français}.asset");
 
                 fichePoke.numero = numero;
@@ -90,7 +90,7 @@ namespace CSVImport
         private static void CreatePoke(int numero, string français, string anglais, string type, int pv, int attaque, int defense, int vitesse, LISTscript pokelist)
         {
 
-            var fichePoke = ScriptableObject.CreateInstance<JsonEditor>();
+            var fichePoke = ScriptableObject.CreateInstance<CsvEditor>();
 
             fichePoke.numero = numero;
             fichePoke.nomfr = français;

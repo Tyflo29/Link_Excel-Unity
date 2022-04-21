@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(JsonEditor))]
+[CustomEditor(typeof(CsvEditor))]
 public class myScriptEditor : Editor
 {
     public override void OnInspectorGUI()
@@ -11,7 +11,7 @@ public class myScriptEditor : Editor
         base.OnInspectorGUI();
         if (GUILayout.Button("Import"))
         {
-            var targetAsPouet = (JsonEditor)target;
+            var targetAsPouet = (CsvEditor)target;
 
             //targetAsPouet.ImportFromJson();
 
