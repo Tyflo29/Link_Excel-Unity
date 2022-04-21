@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b5f84da5fac394429b7bd744090eb83, type: 3}
-  m_Name: 5_Reptincel
+  m_Name: 9_Tortank
   m_EditorClassIdentifier: 
-  numero: 5
-  nomfr: Reptincel
-  nomang: Charmeleon
-  type: Feu
-  pv: 58
-  att: 64
-  def: 58
-  vit: 80
+  numero: 0
+  nomfr: 
+  nomang: 
+  type: 
+  pv: 0
+  att: 0
+  def: 0
+  vit: 0

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b5f84da5fac394429b7bd744090eb83, type: 3}
-  m_Name: 1_Bulbizarre
+  m_Name: 3_Florizarre
   m_EditorClassIdentifier: 
-  numero: 1
-  nomfr: Bulbizarre
-  nomang: Bulbasaur
-  type: Plante / Poison
-  pv: 45
-  att: 49
-  def: 49
-  vit: 45
+  numero: 0
+  nomfr: 
+  nomang: 
+  type: 
+  pv: 0
+  att: 0
+  def: 0
+  vit: 0

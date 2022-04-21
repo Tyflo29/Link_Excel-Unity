@@ -43,14 +43,12 @@ namespace CSVImport
         {
             if (!System.IO.Directory.Exists("Assets/Script")) System.IO.Directory.CreateDirectory("Assets/Script");
 
-            var pokelist = ScriptableObject.CreateInstance<LISTscript>();
-            AssetDatabase.CreateAsset(pokelist, $"Assets/Script/Liste/Liste_Pokemon.asset");
+            var pokelist = ScriptableObject.CreateInstance<ListScript>();
+            AssetDatabase.CreateAsset(pokelist, $"Assets/Script/Liste_Pokemon.asset");
 
             for (int i = 0; i < csvData.Count; i++)
             {
                 Dictionary<string, object> _potentialPoke = csvData[i];
-
-                //Debug.Log($"Poke Number: {_potentialPoke["#"]} {_potentialPoke["français"]} {_potentialPoke["anglais"]} {_potentialPoke["Type"]} {_potentialPoke["PV"]} {_potentialPoke["Attaque"]} {_potentialPoke["Defense"]} {_potentialPoke["Vitesse"]}");
 
                 int numero;string français;string anglais; string type;int pv;int attaque;int defense; int vitesse;
 
@@ -66,7 +64,7 @@ namespace CSVImport
                 type = _potentialPoke["Type"].ToString();
 
                 CsvEditor fichePoke = ScriptableObject.CreateInstance<CsvEditor>();
-                AssetDatabase.CreateAsset(fichePoke, $"Assets/Script/{numero}_{français}.asset");
+                AssetDatabase.CreateAsset(fichePoke, $"Assets/Script/Liste/{numero}_{français}.asset");
 
                 fichePoke.numero = numero;
                 fichePoke.nomfr = français;
@@ -79,32 +77,12 @@ namespace CSVImport
 
                 AssetDatabase.SaveAssets();
 
-                //pokelist.Add(Resources.Load($"{numero}_{français}.asset"));
+                pokelist.Add((CsvEditor)AssetDatabase.LoadAssetAtPath($"Assets/Script/Liste/{numero}_{français}.asset", typeof(CsvEditor)));
 
                 if (i > 10) break;
             }
             AssetDatabase.SaveAssets();
         }
-
-        /*
-        private static void CreatePoke(int numero, string français, string anglais, string type, int pv, int attaque, int defense, int vitesse, LISTscript pokelist)
-        {
-
-            var fichePoke = ScriptableObject.CreateInstance<CsvEditor>();
-
-            fichePoke.numero = numero;
-            fichePoke.nomfr = français;
-            fichePoke.nomang = anglais;
-            fichePoke.type = type;
-            fichePoke.pv = pv;
-            fichePoke.att = attaque;
-            fichePoke.def = defense;
-            fichePoke.vit = vitesse;
-
-
-            AssetDatabase.CreateAsset(fichePoke, $"Assets/Script/{numero}_{français}.asset");
-            AssetDatabase.SaveAssets();
-        }*/
 
         private static bool IsCSVFile(string fullPath)
         {

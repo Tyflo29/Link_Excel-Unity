@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b5f84da5fac394429b7bd744090eb83, type: 3}
-  m_Name: 6_Dracaufeu
+  m_Name: 1_Bulbizarre
   m_EditorClassIdentifier: 
-  numero: 6
-  nomfr: Dracaufeu
-  nomang: Charizard
-  type: Feu / Vol
-  pv: 78
-  att: 84
-  def: 78
-  vit: 100
+  numero: 0
+  nomfr: 
+  nomang: 
+  type: 
+  pv: 0
+  att: 0
+  def: 0
+  vit: 0

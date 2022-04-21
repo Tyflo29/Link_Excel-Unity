@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "List", fileName = "List_Scriptable")]
-public class LISTscript : ScriptableObject
+[CreateAssetMenu(menuName = "Ensemble", fileName = "List_Scriptable")]
+public class ListScript : ScriptableObject
 {
-    public List<ScriptableObject> pokelist = new List<ScriptableObject>();
-
-    public void Add(ScriptableObject script)
+    public List<Object> pokelist = new List<Object>();
+    
+    public void Add(Object script)
     {
         pokelist.Add(script);
     }
